@@ -35,6 +35,7 @@ fn core_types() {
     println!("f = {}, size = {} bytes.", f, mem::size_of_val(&f));
 }
 
+#[allow(dead_code)]
 fn operators() {
     // arithmetic
     let mut a = 2 + 3*4;
@@ -71,9 +72,29 @@ fn operators() {
     println!("Does x less than 5: {}", x_is_5);
 }
 
+#[allow(dead_code)]
+fn scope_and_shadowing() {
+    let a = 123;
+
+    {
+        let b = 456;
+        println!("inside, b = {}", b);
+
+        let a = 777;
+        println!("inside, a = {}", a);
+
+    }
+    println!("outside, a = {}", a);
+
+}
+
 fn main() {
     // Core Data Types
     // core_types();
 
+    // Operators
     operators();
+
+    // Scope and Shadowing
+    scope_and_shadowing();
 }
