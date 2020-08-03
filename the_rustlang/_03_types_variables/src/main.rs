@@ -1,5 +1,6 @@
 use std::mem;
 
+
 #[allow(dead_code)]
 fn core_types() {
     // unsigned 0 + (255)
@@ -88,13 +89,25 @@ fn scope_and_shadowing() {
 
 }
 
+const NUM:u8 = 46; // no fixed address
+
+static mut Z:i32 = 123;
+
 fn main() {
     // Core Data Types
     // core_types();
 
     // Operators
-    operators();
+    // operators();
 
     // Scope and Shadowing
-    scope_and_shadowing();
+    // scope_and_shadowing();
+
+    // Declaring Constants
+    println!("NUM = {}", NUM);
+    unsafe
+    {   
+        Z = 456;
+        println!("Z = {}", Z);
+    }
 }
