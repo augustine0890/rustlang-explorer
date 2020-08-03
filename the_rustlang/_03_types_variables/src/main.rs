@@ -1,3 +1,4 @@
+mod sh;
 use std::mem;
 
 
@@ -110,4 +111,7 @@ fn main() {
         Z = 456;
         println!("Z = {}", Z);
     }
+
+    // Stack and Heap
+    sh::stack_and_heap();
 }
