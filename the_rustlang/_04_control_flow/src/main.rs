@@ -42,11 +42,27 @@ fn while_and_loop() {
     }
 }
 
+#[allow(dead_code)]
+fn for_loop() {
+    for x in 1..11 {
+        if x == 3 {continue;}
+        if x == 8 {break;}
+        println!("x = {}", x);
+    }
+
+    for (pos,y) in (30..41).enumerate() {
+        println!("{}: {}", pos, y);
+    }
+}
+
 
 fn main() {
     // If statement
     // if_statement();
 
     // While and loop
-    while_and_loop();
+    // while_and_loop();
+
+    // For loops
+    for_loop();
 }
