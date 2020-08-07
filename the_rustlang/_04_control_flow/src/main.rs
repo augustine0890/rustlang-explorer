@@ -1,3 +1,5 @@
+mod cl;
+
 #[allow(dead_code)]
 fn if_statement() {
     let mut temp = 25;
@@ -86,5 +88,9 @@ fn main() {
     // for_loop();
 
     // Match Statement
-    match_statement();
+    // match_statement();
+
+    // Combination Look
+    cl::combination_lock();
+
 }
