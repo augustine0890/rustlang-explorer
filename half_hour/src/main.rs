@@ -75,5 +75,5 @@ fn main() {
     let x = fair_dice_roll();
     println!("dice = {}", x);
     
-    scope();
+    // scope();
 }
