@@ -30,9 +30,50 @@ fn tuples() {
     println!("left = {:?}, right = {:?}", left, right);
 
 }
+#[allow(dead_code)]
+fn fair_dice_roll() -> i32 { // `fn` declares a function
+    let feeling_lucky= true;
+    // if feeling_lucky {
+    //     6
+    // } else {
+    //     4
+    // }
+    //return 6;
+    match feeling_lucky {
+        true => 6,
+        false => 4,
+    }
+}
+
+#[allow(dead_code)]
+fn scope() {
+    let _x = "out";
+    {
+        // this is a different `x`
+        let x = "in";
+        println!("x = {}", x);
+    }
+    print!("x = {}", _x);
+}
+
 fn main() {
-    println!("Hello, world!");
+    println!("===========================");
+    println!("Happy Birthday, Augustine!");
+    println!("===========================");
+    
+    // Let's print a cake!
+    println!("   ,,,,,   ");
+    println!("   |||||   ");
+    println!(" =========");
+    println!("@@@@@@@@@@@");
+    println!(" ~@~@~@~@~");
+    println!("@@@@@@@@@@@");
     
     // var_binding();
-    tuples();
+    // tuples();
+    
+    let x = fair_dice_roll();
+    println!("dice = {}", x);
+    
+    scope();
 }
