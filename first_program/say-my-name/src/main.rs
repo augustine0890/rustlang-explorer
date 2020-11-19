@@ -1,3 +1,5 @@
+use std::io;
+
 fn main() {
     let name = "Augustine";
     let another_name = "Quy";
@@ -15,6 +17,12 @@ fn main() {
     let first_name = "Augustine".to_string();
     say_first_name(&first_name);
     say_first_name(&first_name);
+
+    println!("Please enter your name: ");
+    let mut your_name = String::new();
+
+    io::stdin().read_line(&mut your_name);
+    println!("Hello {}", your_name);
 }
 
 fn say_name(first: String, last: String) {
