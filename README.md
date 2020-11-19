@@ -1,7 +1,8 @@
 # rustlang-explorer
-- `cargo new <project-name>`
-- `cargo build`
-
+- `cargo new <project-name>` --> create a new project
+- `cargo build` --> compile
+- `cargo run` --> compile and run
+-  `cargo clean` --> remove generated `target`
 1. Write your Frist Program -> [`first_program`]()
 
 2. The Rust Programming Language -> [`the_rustlang`](https://github.com/augustine0890/rustlang-explorer/blob/master/the_rustlang/README.md)
