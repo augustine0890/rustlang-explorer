@@ -8,4 +8,11 @@ fn main() {
     nick_name = "No name";
     println!("{}", nick_name);
 
+    let first = "Augustine".to_string();
+    let last = "Nguyen".to_string();
+    say_name(first, last);
+}
+
+fn say_name(first: String, last: String) {
+    println!("{} {}", first, last);
 }
