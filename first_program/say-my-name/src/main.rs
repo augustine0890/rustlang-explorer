@@ -11,8 +11,16 @@ fn main() {
     let first = "Augustine".to_string();
     let last = "Nguyen".to_string();
     say_name(first, last);
+
+    let first_name = "Augustine".to_string();
+    say_first_name(&first_name);
+    say_first_name(&first_name);
 }
 
 fn say_name(first: String, last: String) {
     println!("{} {}", first, last);
+}
+
+fn say_first_name(first_name: &String) {
+    println!("{}", first_name);
 }
