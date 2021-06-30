@@ -1,5 +1,5 @@
 [package]
-name = "half_hour"
+name = "_03-types-variables"
 version = "0.1.0"
 authors = ["augustine <augustino0890@gmail.com>"]
 edition = "2018"

@@ -1,5 +1,5 @@
 [package]
-name = "_04_control_flow"
+name = "_02-hello-world-cargo"
 version = "0.1.0"
 authors = ["augustine <augustino0890@gmail.com>"]
 edition = "2018"
